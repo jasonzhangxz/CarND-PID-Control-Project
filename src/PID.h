@@ -42,10 +42,13 @@ public:
   */
   double TotalError();
 
+  /*
+  * Calculate the average PID error.
+  */
+  double AverageError();
+
 private:
   int counter;
-  double max_err;
-  double min_err;
   double err_sum;
   double pre_cte;
 };
